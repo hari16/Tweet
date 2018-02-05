@@ -5,11 +5,11 @@ Developed in Visual Studio 2015
 
 Usage
 
---Download or clone the project to local machine
---Open the solution in Visual studio.
---Restore nuget packages by right click on solution and "Restore Nuget Packages".
---Build the project.
---Run the Project.
+Download or clone the project to local machine.
+Open the solution in Visual studio.
+Restore nuget packages by right click on solution and "Restore Nuget Packages".
+Build the project.
+Run the Project.
 
 Frontend
 

@@ -36,7 +36,7 @@ var query_twitter = function query_twitter(str_query) {
     $.ajax({
         cache: false,
         url: '/Home/GetFeed',
-        method: 'GET',  
+        method: 'GET',
         dataType: 'json',
         success: function success(data) {
             handle_success(data);
@@ -76,6 +76,9 @@ var build_html = function build_html(tweets) {
 };
 
 var build_html_widget = function build_html_widget(tweet) {
+    if (tweet.media == "") {
+        return '<li class="tweet-list mdl-list__item"> <div class="tweet-card mdl-card mdl-shadow--6dp">  <span> <i> <img src=' + tweet.image + '> </i> <span> ' + tweet.name + ' </span>  <span> ' + '@' + tweet.screenname + ' </span> </span> </br> <span class="mdl-list__item-text-body"> ' + tweet.text + ' </span> </br> <div class="mdl-card__actions mdl-card--border"> <span><i class="material-icons md-dark">cached</i>' + tweet.retweet + '</div></div>    </div>            </li>';
+    }
 
     return '<li class="tweet-list mdl-list__item"> <div class="tweet-card mdl-card mdl-shadow--6dp">  <span> <i> <img src=' + tweet.image + '> </i> <span> ' + tweet.name + ' </span>  <span> ' + '@' + tweet.screenname + ' </span> </span> </br> <span class="mdl-list__item-text-body"> ' + tweet.text + '<img class="tweet-media" src=' + tweet.media + ' align="center" onerror="this.remove();"/> </span> </br> <div class="mdl-card__actions mdl-card--border"> <span><i class="material-icons md-dark">cached</i>' + tweet.retweet + '</div></div>    </div>            </li>';
 };

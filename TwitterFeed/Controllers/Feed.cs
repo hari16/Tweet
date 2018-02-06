@@ -26,18 +26,7 @@ namespace TwitterFeed.Controllers
 
         public Feed()
         {
-            //this.ConsumerKey = consumerKey;
-            //this.ConsumerKeySecret = consumerKeySecret;
-            //this.AccessToken = accessToken;
-            //this.AccessTokenSecret = accessTokenSecret;
         }
-
-        //public string ConsumerKey { set; get; }
-        //public string ConsumerKeySecret { set; get; }
-        //public string AccessToken { set; get; }
-        //public string AccessTokenSecret { set; get; }
-
-
 
         public string GetTweets(string screenName, int count)
         {

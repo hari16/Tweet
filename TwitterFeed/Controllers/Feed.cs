@@ -1,23 +1,15 @@
 ﻿using System;
-using System.Linq;
-using System.Web;
 using System.IO;
 using System.Net;
 using System.Text;
-using System.Diagnostics;
 using System.Security.Cryptography;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Configuration;
-using System.Collections.Specialized;
+
 
 namespace TwitterFeed.Controllers
 {
     public class Feed
     {
         public const string oauthVersion = "1.0";
-        //public string oauthVersion = ConfigurationManager.AppSettings.Get("oauthVersion");
         public const string oauthSignatureMethod = "HMAC-SHA1";
         public const string consumerKey = "3MylzS4IXxPTx5sy6pXmpbvMj";
         public const string consumerKeySecret = "Okhq3HuXFCCZRGt4ii8eZSbstElkxrYaHyam3YAJu6Hx05TWEu";

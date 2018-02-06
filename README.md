@@ -31,6 +31,6 @@ Location: /jasmine
 Backend
 
 Visual Studio unit tests.
-Location: /Test
+Location: Project ServerTest
 
 

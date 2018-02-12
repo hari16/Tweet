@@ -13,7 +13,7 @@ Run the Project.
 
 Frontend
 
-Developed in JavScript, JQuery, Underscore.js.
+Developed in JavaScript, JQuery, Underscore.js.
 Location: /Scripts
 
 Backend
@@ -31,6 +31,6 @@ Location: /jasmine
 Backend
 
 Visual Studio unit tests.
-Location: /Test
+Location: Project ServerTest
 
 
